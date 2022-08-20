@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="js/jquery-3.6.0.js"></script>
+  <link rel="shortcut icon" href="images/LOGO.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZATEC - MOBILE REPAIRING LANDING PAGE</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navID" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+  <!-- Header Start -->
+  <header class="header">
+    <!-- LOGO START -->
+    <div class="logo_header">
+      <img class="img img-fluid logo" src="images/LOGO.png" alt="LOGO">
+    </div>
+    <!-- LOGO END -->
+
+    <!-- NAVBAR START -->
+    <nav id="navID" class="navbar">
+      <ul class="navlist nav nav-pills" role="tablist">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+    <!-- NAVBAR END -->
+
+
+    <!-- To TOGGLE NAVBAR -->
+    <ul type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"
+      class="navbar__toggle hamBurger" id="mobile-menu">
+      <li class="bar"></li>
+      <li class="bar"></li>
+      <li class="bar"></li>
+    </ul>
+
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+      id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <!-- LOGO -->
+        <div class="logo_header logo_header_2">
+          <img class="img img-fluid logo" src="images/LOGO.png" alt="LOGO">
+        </div>
+        <!-- CLOSE BUTTON -->
+        <button type="button" class="btn-close  btn close_btn text-reset" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+
+      </div>
+      <div class="offcanvas-body">
+        <!-- NAVBAR IN MOBILE -->
+        <nav id="navID" class="navbar">
+          <ul class="navlist nav nav-pills navlist2" role="tablist">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+
+  </header>
+  <!-- Header END -->
+
+  <!-- -*-*-**************-*-*-*-*-*****************-*-*-**-*-*-*-*- -->
+  <main >
+    <!-- Hero Section Start -->
+    <div class="home" id="home">
+      <!-- SLIDES -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+       
+        <div class="carousel-inner">
+          <!-- SLIDE ONE -->
+          <div class="carousel-item active slide_home" data-bs-interval="5000">
+            <h6 class="home__sub_heading">Welcome To <span>Zatec.</span></h6>
+            <h1 class="home_heading">We Are The Saviour Of Your Mobiles.</h1>
+            <button class="btn btn-lg">Get It</button>
+          </div>
+          <!-- SLIDE SECOND -->
+          <div class="carousel-item slide_home" data-bs-interval="6000">
+            <h6 class="home__sub_heading">Welcome To <span>Zatec.</span></h6>
+            <h1 class="home_heading">Mobile Makes Your Life Fast And Easy.</h1>
+            <button class="btn btn-lg">Get It</button>
+
+          </div>
+          <!-- SLIDE THREE -->
+          <div class="carousel-item slide_home" data-bs-interval="7000">
+            <h6 class="home__sub_heading">Welcome To <span>Zatec.</span></h6>
+            <h1 class="home_heading">Don't Be Shy For Showing Your Mobile Problems.</h1>
+            <button class="btn btn-lg">Get It</button>
+
+          </div>
+        
+        </div>
+
+      </div>
+    </div>
+    <!-- Hero Section End -->
+    <!-- ABOUT US SECTION START -->
+    <div class="about_us d-flex align-items-center " id="about">
+      <div class="about_us_inner_body_1">
+        <h6 class="heading_about_us"><span>About</span> Us</h6>
+        <h3 class="heading_about_us_2">Who We Are</h3>
+        <p class="para_about_us">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda qui voluptas fuga eius voluptatum eos asperiores ipsa sed amet harum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat est modi placeat nam aut sunt reiciendis totam velit, veniam cumque.</p>
+        <button type="button" class="btn btn-lg about_us_btn">Read More</button>
+      </div>
+      <div class="about_us_inner_body_2">
+        <img class="img img-fluid" src="images/about_us_mobile.png" alt="mobile_about">
+        <h6 style="position: absolute;" class="inner_mobile_text"><span>Z</span><span>A</span><span>T</span><span>E</span><span>C</span> <span>S</span><span>E</span><span>R</span><span>V</span><span>I</span><span>C</span><span>E</span><span>S</span> </h6>
+      </div>
+    </div>
+    <!-- ABOUT US SECTION END -->
+  <!-- -*-*-**************-*-*-*-*-*****************-*-*-**-*-*-*-*- -->
+
+    <!-- SERVICES SECTION START -->
+<div class="services" id="services">
+<div class="heading_div">
+  <h6>Our <span>Services</span></h6>
+  <h3>What We Repair</h3>
+</div>
+<div class="sub_services">
+  <div class="service" id="service1">
+    <div class="service_img_header ratio ratio-4x3">
+      <img class="img img-fluid" src="images/mobile-3975799_640-removebg-preview.png" alt="mobile">
+    </div>
+    <div class="service_data d-flex align-items-start justify-content-center flex-column">
+      <h5>Cracked Display</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias possimus maiores assumenda. Magni recusandae ad et sit labore laborum odit aperiam ratione itaque, quaerat aspernatur minima reiciendis id doloribus.</p>
+      <button class="btn">Repair It</button>
+    </div>
+
+    
+  </div>
+  <div class="service" id="service2">
+    <div class="service_img_header ratio ratio-4x3">
+      <img class="img img-fluid" src="images/smartphone-1994410_640-removebg.png" alt="mobile">
+    </div>
+    <div class="service_data d-flex align-items-end justify-content-center flex-column">
+      <h5>Cracked Display</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias possimus maiores assumenda. Magni recusandae ad et sit labore laborum odit aperiam ratione itaque, quaerat aspernatur minima reiciendis id doloribus.</p>
+      <button class="btn">Repair It</button>
+    </div>
+
+    
+  </div>
+
+  <div class="service" id="service3">
+    <div class="service_img_header ratio ratio-4x3">
+      <img class="img img-fluid" src="images/smartphone-1994410_640-removebg.png" alt="mobile">
+    </div>
+    <div class="service_data d-flex align-items-start justify-content-center flex-column">
+      <h5>Cracked Display</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias possimus maiores assumenda. Magni recusandae ad et sit labore laborum odit aperiam ratione itaque, quaerat aspernatur minima reiciendis id doloribus.</p>
+      <button class="btn">Repair It</button>
+    </div>
+
+    
+  </div>
+  <div class="service" id="service4">
+    <div class="service_img_header ratio ratio-4x3">
+      <img class="img img-fluid" src="images/about_us_mobile.png" alt="mobile">
+    </div>
+    <div class="service_data d-flex align-items-end justify-content-center flex-column">
+      <h5>Cracked Display</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias possimus maiores assumenda. Magni recusandae ad et sit labore laborum odit aperiam ratione itaque, quaerat aspernatur minima reiciendis id doloribus.</p>
+      <button class="btn">Repair It</button>
+    </div>
+
+    
+  </div>
+</div>
+</div>
+    <!-- SERVICES SECTION END -->
+  </main>
+
+
+
+
+
+
+
+
+
+
+  <script src="js/BS/js/bootstrap.bundle.min.js"></script>
+  <script src="js/BS/js/bootstrap.bundle.js"></script>
+
+  <script src="js/BS/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
