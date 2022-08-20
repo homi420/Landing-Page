@@ -1,0 +1,448 @@
+/*  LOAD FONT FAMILY OF MONTSERRAT*/
+@import url("../Font_Family/montserrat/Montserrat-Regular.otf");
+@import url("../Font_Family/merriweather/Merriweather-Regular.otf");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: montserrat;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3.5rem;
+}
+
+h5 {
+  font-size: 3rem;
+}
+
+h6 {
+  font-size: 2.5rem;
+}
+
+/*  STYLING FOR ALL OF THE BUTTONS EXCEPT THAT HAS STYLING AFTER THIS SEPERATELY*/
+.btn {
+  font-size: 3rem;
+  background-color: #34a7e9;
+  color: rgb(9, 41, 110);
+  border-radius: 0%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: all 0.1s ease-in-out;
+}
+.btn:hover {
+  color: #34a7e9;
+  background-color: rgb(9, 41, 110);
+}
+.btn:focus {
+  box-shadow: none;
+}
+.btn:active {
+  color: white;
+  transition: all -1s ease-in-out;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+/**--**-*-*-*-*-*-*-*-*-*-*-*--**-*-*-*-*-*-*-*-*-*--**-*-*-*--*-*-*-**/
+.offcanvas {
+  display: none;
+}
+
+.header {
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  display: -ms- flex;
+  display: -webkit- flex;
+  display: -moz- flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(31, 28, 28, 0.527);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1030;
+}
+
+.logo_header {
+  width: 18%;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  display: -ms- flex;
+  display: -webkit- flex;
+  display: -moz- flex;
+  width: 82%;
+  transition: all 0.3s ease-in-out;
+}
+
+.navlist {
+  display: flex;
+  display: -ms- flex;
+  display: -webkit- flex;
+  display: -moz- flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navlist a {
+  color: white;
+  font-size: 1.9rem;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+  border-radius: 10%;
+}
+.navlist a:hover {
+  color: #34a7e9;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.hamBurger {
+  cursor: pointer;
+  display: none;
+}
+.hamBurger li {
+  color: rgb(230, 13, 13);
+  background-color: #34a7e9;
+  list-style-type: none;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  height: 0.4rem;
+  width: 2.4rem;
+}
+
+.for_header {
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  display: -ms- flex;
+  display: -webkit- flex;
+  display: -moz- flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 28, 28);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1030;
+}
+
+.for_logo_header {
+  width: 15%;
+  transition: all 0.3s ease-in-out;
+}
+
+.for_nav {
+  width: 85%;
+  transition: all 0.3s ease-in-out;
+}
+
+.for_nav-item_a {
+  font-size: 1.8rem;
+  color: rgb(9, 41, 110);
+}
+.for_nav-item_a:hover {
+  color: #34a7e9;
+}
+
+/*HEADER END*/
+/**--**-*-*-*-*-*-*-*-*-*-*-*--**-*-*-*-*-*-*-*-*-*--**-*-*-*--*-*-*-**/
+/*HERO SECTION START*/
+.home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  display: -ms- flex;
+  display: -webkit- flex;
+  display: -moz- flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(77, 72, 72) url("../images/bg.png");
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.home__sub_heading {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.home__sub_heading span {
+  color: #34a7e9;
+}
+
+.home_heading {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.slide_home {
+  text-align: center;
+  margin-top: 10rem;
+}
+.slide_home .btn {
+  margin-top: 2rem;
+  color: #34a7e9;
+  background-color: rgb(9, 41, 110);
+  border-radius: 0%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.slide_home .btn:hover {
+  background-color: #34a7e9;
+  color: rgb(9, 41, 110);
+}
+
+/*HOME END*/
+/**--**-*-*-*-*-*-*-*-*-*-*-*--**-*-*-*-*-*-*-*-*-*--**-*-*-*--*-*-*-**/
+/*  ABOUT US START*/
+.about_us {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.about_us_inner_body_1 {
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.heading_about_us span {
+  color: rgb(9, 41, 110);
+}
+
+.heading_about_us_2 {
+  margin-top: 1.5rem;
+  font-weight: 800;
+}
+
+.para_about_us {
+  line-height: 150%;
+  margin-top: 1rem;
+}
+
+.about_us_btn {
+  margin-top: 2rem;
+}
+
+.about_us_inner_body_2 {
+  width: 50%;
+  margin: 0.5rem;
+  display: flex;
+  display: -ms- flex;
+  display: -webkit- flex;
+  display: -moz- flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_us_inner_body_2 img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.inner_mobile_text {
+  transform: rotate(90deg);
+  cursor: default;
+  transition: all 2s ease-in-out;
+}
+.inner_mobile_text span {
+  opacity: 0.2;
+  font-size: 2rem;
+  color: rgb(9, 41, 110);
+}
+.inner_mobile_text span:hover {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+/*  ABOUT US END*/
+/**--**-*-*-*-*-*-*-*-*-*-*-*--**-*-*-*-*-*-*-*-*-*--**-*-*-*--*-*-*-**/
+/*SERVICES SECTION START*/
+.heading_div {
+  display: flex;
+  display: -ms- flex;
+  display: -webkit- flex;
+  display: -moz- flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 2rem;
+}
+.heading_div h6 span {
+  color: rgb(9, 41, 110);
+}
+.heading_div h3 {
+  font-weight: 800;
+  margin-top: 1.5rem;
+}
+
+.sub_services {
+  display: flex;
+  display: -ms- flex;
+  display: -webkit- flex;
+  display: -moz- flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 45%;
+  box-shadow: 0rem 0rem 3.3rem 0.3rem rgb(183, 241, 255);
+  margin: 2.5%;
+}
+
+#service1 {
+  align-items: flex-end;
+}
+
+.service_img_header {
+  background-color: rgb(224, 249, 255);
+  background-blend-mode: darken;
+}
+
+.service_data {
+  padding: 1rem;
+}
+.service_data h5 {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.service_data p {
+  margin-top: 1rem;
+}
+.service_data .btn {
+  margin-top: 1rem;
+}
+
+/*SERVICES SECTION END*/
+/**--**-*-*-*-*-*-*-*-*-*-*-*--**-*-*-*-*-*-*-*-*-*--**-*-*-*--*-*-*-**/
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 52.5%;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .offcanvas {
+    background-color: rgb(31, 28, 28);
+    display: flex;
+    display: -ms- flex;
+    display: -webkit- flex;
+    display: -moz- flex;
+  }
+  .logo_header_2 {
+    width: 15%;
+  }
+  .close_btn {
+    padding: 2rem;
+  }
+  .for_header {
+    align-items: unset;
+  }
+  .hamBurger {
+    display: block;
+    transition: all 0.1s ease-in-out;
+    top: 1%;
+    right: 1%;
+  }
+  .navlist {
+    display: none;
+  }
+  .navlist2 {
+    display: flex;
+    display: -ms- flex;
+    display: -webkit- flex;
+    display: -moz- flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .bar {
+    width: 3rem;
+    height: 0.3rem;
+    margin: 0.5rem auto;
+    transition: all 0.3s ease-in-out;
+  }
+  #mobile-menu {
+    position: absolute;
+    transform: translate(5%, 20%);
+  }
+  #bar2 {
+    opacity: 0;
+    -o-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -webkit-opacity: 0;
+  }
+  #bar1 {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #bar3 {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+/**--**-*-*-*-*-*-*-*-*-*-*-*--**-*-*-*-*-*-*-*-*-*--**-*-*-*--*-*-*-**/
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 42.5%;
+  }
+}
+/**--**-*-*-*-*-*-*-*-*-*-*-*--**-*-*-*-*-*-*-*-*-*--**-*-*-*--*-*-*-**/
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 32.5%;
+  }
+}
+/**--**-*-*-*-*-*-*-*-*-*-*-*--**-*-*-*-*-*-*-*-*-*--**-*-*-*--*-*-*-**/
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 22.5%;
+  }
+}
+/**--**-*-*-*-*-*-*-*-*-*-*-*--**-*-*-*-*-*-*-*-*-*--**-*-*-*--*-*-*-**/
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 15.5%;
+  }
+}
+/**--**-*-*-*-*-*-*-*-*-*-*-*--**-*-*-*-*-*-*-*-*-*--**-*-*-*--*-*-*-**//*# sourceMappingURL=main.css.map */
