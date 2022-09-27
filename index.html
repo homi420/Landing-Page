@@ -2,207 +2,786 @@
 <html lang="en">
 
 <head>
-  <script src="js/jquery-3.6.0.js"></script>
+  <!-- LOADS THE ICON OF THE WEBSITE -->
   <link rel="shortcut icon" href="images/LOGO.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+  <!-- LOADS THE BOOTSRAP CSS FILE -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- LOADS THE FONT-AWESOME FILE USED FOR SOME ICONS -->
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <!-- LOADS THE AOS ANIMATION CSS FILE -->
+  <link rel="stylesheet" href="css/aos.css">
+
+  <!-- LOADS THE BXSLIDER CSS FILE -->
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <!-- LOADS THE MAIN CSS FILE -->
   <link rel="stylesheet" href="css/main.css">
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZATEC - MOBILE REPAIRING LANDING PAGE</title>
+  <!-- TITLE OF THE WEBSITE -->
+  <title>Zatec-Serivces</title>
+
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navID" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+<body id="stop-scrolling">
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
 
-  <!-- Header Start -->
-  <header class="header">
-    <!-- LOGO START -->
-    <div class="logo_header">
-      <img class="img img-fluid logo" src="images/LOGO.png" alt="LOGO">
+  <header>
+    <!-- LOGO START-->
+    <div class="logo">
+      <img src="images/LOGO.png" class="img img-fluid" alt="Logo">
     </div>
     <!-- LOGO END -->
+    <nav>
+      <ul class="navlist">
+        <li class="nav-item"><a id="nav-link-1" href="#home">Home</a></li>
+        <li class="nav-item"><a id="nav-link-2" href="#about">About Us</a></li>
+        <li class="nav-item"><a id="nav-link-3" href="#services">Services</a></li>
+        <li class="nav-item"><a id="nav-link-4" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a id="nav-link-5" href="#team">Team</a></li>
+        <li class="nav-item"><a id="nav-link-6" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a id="nav-link-7" href="#testimonials">Testimonials</a></li>
 
-    <!-- NAVBAR START -->
-    <nav id="navID" class="navbar">
-      <ul class="navlist nav nav-pills" role="tablist">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
       </ul>
     </nav>
-    <!-- NAVBAR END -->
-
-
-    <!-- To TOGGLE NAVBAR -->
-    <ul type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"
-      class="navbar__toggle hamBurger" id="mobile-menu">
-      <li class="bar"></li>
-      <li class="bar"></li>
-      <li class="bar"></li>
-    </ul>
-
-
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-      id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-      <div class="offcanvas-header">
-        <!-- LOGO -->
-        <div class="logo_header logo_header_2">
-          <img class="img img-fluid logo" src="images/LOGO.png" alt="LOGO">
-        </div>
-        <!-- CLOSE BUTTON -->
-        <button type="button" class="btn-close  btn close_btn text-reset" data-bs-dismiss="offcanvas"
-          aria-label="Close"></button>
-
-      </div>
-      <div class="offcanvas-body">
-        <!-- NAVBAR IN MOBILE -->
-        <nav id="navID" class="navbar">
-          <ul class="navlist nav nav-pills navlist2" role="tablist">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-
+    <i class="fa fa-bars" id="menuBtn" style="color: white; font-size: 2rem;"></i>
+    <!-- <img src="images/list-icon.png" class="img-fluid" width="5%" > -->
 
   </header>
-  <!-- Header END -->
+  <!-- HERO SECTION START -->
+  <section class="Home" id="home">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- FIRST SLIDE  -->
+      <div class="mySlides fade">
+        <h6 class="home__sub_heading">Welcome To <span>Zatec.</span></h6>
+        <h1 class="home_heading" style="text-align: center;">We Are The Saviour Of Your Mobiles.</h1>
+        <button class="btn btn-lg">Get It</button>
+      </div>
+      <!-- SECOND SLIDE  -->
+      <div class="mySlides fade">
+        <h6 class="home__sub_heading">Welcome To <span>Zatec.</span></h6>
+        <h1 class="home_heading" style="text-align: center;">Mobile Makes Your Life Fast And Easy.</h1>
+        <button class="btn btn-lg">Get It</button>
+      </div>
+
+      <!-- THIRD SLIDE  -->
+      <div class="mySlides fade">
+        <h6 class="home__sub_heading">Welcome To <span>Zatec.</span></h6>
+        <h1 class="home_heading" style="text-align: center;">Don't Be Shy For Showing Your Mobile Problems.</h1>
+        <button class="btn btn-lg">Get It</button>
+      </div>
+
+
+    </div>
+    <br>
+
+
+  </section>
+  <!-- HERO SECTION END -->
 
   <!-- -*-*-**************-*-*-*-*-*****************-*-*-**-*-*-*-*- -->
-  <main >
-    <!-- Hero Section Start -->
-    <div class="home" id="home">
-      <!-- SLIDES -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-       
-        <div class="carousel-inner">
-          <!-- SLIDE ONE -->
-          <div class="carousel-item active slide_home" data-bs-interval="5000">
-            <h6 class="home__sub_heading">Welcome To <span>Zatec.</span></h6>
-            <h1 class="home_heading">We Are The Saviour Of Your Mobiles.</h1>
-            <button class="btn btn-lg">Get It</button>
-          </div>
-          <!-- SLIDE SECOND -->
-          <div class="carousel-item slide_home" data-bs-interval="6000">
-            <h6 class="home__sub_heading">Welcome To <span>Zatec.</span></h6>
-            <h1 class="home_heading">Mobile Makes Your Life Fast And Easy.</h1>
-            <button class="btn btn-lg">Get It</button>
 
-          </div>
-          <!-- SLIDE THREE -->
-          <div class="carousel-item slide_home" data-bs-interval="7000">
-            <h6 class="home__sub_heading">Welcome To <span>Zatec.</span></h6>
-            <h1 class="home_heading">Don't Be Shy For Showing Your Mobile Problems.</h1>
-            <button class="btn btn-lg">Get It</button>
+  <!-- ABOUT US SECTION START -->
+  <section class="about_us d-flex align-items-center " id="about">
+    <div class="about_us_inner_body_1 ">
+      <!-- ABOUT US HEADING -->
+      <h6 class="heading_about_us " data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-out"
+        data-aos-duration="1000" data-aos-once="true"><span>About</span> Us</h6>
+      <!-- ABOUT US HEADING 2 -->
+      <h3 class="heading_about_us_2 ">Who <span>We</span> Are</h3>
+      <p class="para_about_us  ">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Assumenda qui voluptas
+        fuga
+        eius voluptatum eos asperiores ipsa sed amet harum! Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit.
+        Repellat est modi placeat nam aut sunt reiciendis totam velit, veniam cumque.</p>
+      <!-- ABOUT US READ MORE BUTTON -->
+      <button type="button" class="btn btn-lg about_us_btn ">Read More</button>
+    </div>
+    <div class="about_us_inner_body_2  ">
+      <!-- ABOUT US IMAGE -->
+      <img data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in" data-aos-duration="1000"
+        data-aos-once="true" class="img img-fluid about_us_img" src="images/about_us_phone.png" alt="mobile_about">
+      <h6 style="position: absolute;" class="inner_mobile_text">
+        <span>Z</span><span>A</span><span>T</span><span>E</span><span>C</span>
+        <span>S</span><span>E</span><span>R</span><span>V</span><span>I</span><span>C</span><span>E</span><span>S</span>
+      </h6>
+    </div>
+  </section>
+  <!-- ABOUT US SECTION END -->
+  <!-- -*-*-**************-*-*-*-*-*****************-*-*-**-*-*-*-*- -->
+  <!-- SERVICES SECTION START -->
+  <section class="services" id="services">
+    <div class="  heading_div">
+      <!-- SERVICES TOP HEADING -->
+      <h6 class="">Our <span>Services</span></h6>
+      <!-- SERVICES TOP HEADING 2 -->
+      <h3 class="">What We <span>Repair</span></h3>
+    </div>
+    <!-- ALL SERVICES HEADER -->
+    <div data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in" data-aos-duration="2000"
+      data-aos-once="true" class="sub_services">
+      <!-- SERVICE # 1 -->
+      <div class="service js-tilt" id="service1" data-tilt data-tilt-glare="true" data-tilt-max-glare=".2"
+        data-tilt-speed="1000" data-tilt-perspective="1000" data-tilt-max="20" data-tilt-scale="1.1"
+        data-tilt-transition="true" data-tilt-reverse="true">
+        <!-- IMAGE -->
+        <div class="service_img_header">
+          <img class="img img-fluid" src="images/Services/service_mobile_1.png" alt="mobile">
+        </div>
+        <!-- HEADING, DESCRIPTION AND BUTTON -->
+        <div class="service_data d-flex align-items-center justify-content-center flex-column">
+          <!-- HEADING -->
+          <h4>Cracked Display</h4>
+          <!-- DESCRIPTION -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias possimus maiores assumenda. Magni
+            recusandae</p>
+          <!-- Button trigger modal -->
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Repair Now</button>
+        </div>
+      </div>
 
-          </div>
-        
+      <!-- SERVICE # 2 -->
+      <div class="service  js-tilt" data-tilt id="service2" data-tilt-glare="true" data-tilt-max-glare=".2"
+        data-tilt-speed="1000" data-tilt-perspective="1000" data-tilt-max="20" data-tilt-scale="1.1"
+        data-tilt-transition="true" data-tilt-reverse="true">
+        <!-- IMAGE -->
+        <div class="service_img_header">
+          <img class="img img-fluid" src="images/services/service_mobile_2.png" alt="mobile">
+        </div>
+        <!-- HEADING, DESCRIPTION AND BUTTON -->
+        <div class="service_data d-flex align-items-center justify-content-center flex-column">
+          <!-- HEADING -->
+          <h4>Display Not Working</h4>
+          <!-- DESCRIPTION -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias possimus maiores assumenda. Magni
+            recusandae</p>
+          <!-- Button trigger modal -->
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Repair Now</button>
         </div>
 
+
       </div>
+      <!-- SERVICE # 3 -->
+      <div class="service js-tilt" data-tilt id="service3" data-tilt-reverse="true" data-tilt-glare="true"
+        data-tilt-max-glare=".2" data-tilt-speed="1000" data-tilt-perspective="1000" data-tilt-max="20"
+        data-tilt-scale="1.1" data-tilt-transition="true">
+        <!-- IMAGE -->
+        <div class="service_img_header">
+          <img class="img img-fluid" src="images/services/service_mobile_3.png" alt="mobile">
+        </div>
+        <!-- HEADING, DESCRIPTION AND BUTTON -->
+        <div class="service_data d-flex align-items-center justify-content-center flex-column">
+          <!-- HEADING -->
+          <h4>Water Damage</h4>
+          <!-- DESCRIPTION -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias possimus maiores assumenda. Magni
+            recusandae</p>
+          <!-- Button trigger modal -->
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Repair Now</button>
+        </div>
+
+
+      </div>
+      <!-- SERVICE # 4 -->
+      <div class="service js-tilt" data-tilt id="service4" data-tilt-glare="true" data-tilt-max-glare=".2"
+        data-tilt-speed="1000" data-tilt-perspective="1000" data-tilt-max="20" data-tilt-scale="1.1"
+        data-tilt-transition="true" data-tilt-reverse="true">
+        <!-- IMAGE -->
+        <div class="service_img_header">
+          <img class="img img-fluid" src="images/services/service_mobile_2.png" alt="mobile">
+        </div>
+        <!-- HEADING, DESCRIPTION AND BUTTON -->
+        <div class="service_data d-flex align-items-center justify-content-center flex-column">
+          <!-- HEADING -->
+          <h4>Battery Problems</h4>
+          <!-- DESCRIPTION -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias possimus maiores assumenda. Magni
+            recusandae</p>
+          <!-- Button trigger modal -->
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Repair Now</button>
+        </div>
+      </div>
+
     </div>
-    <!-- Hero Section End -->
-    <!-- ABOUT US SECTION START -->
-    <div class="about_us d-flex align-items-center " id="about">
-      <div class="about_us_inner_body_1">
-        <h6 class="heading_about_us"><span>About</span> Us</h6>
-        <h3 class="heading_about_us_2">Who We Are</h3>
-        <p class="para_about_us">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda qui voluptas fuga eius voluptatum eos asperiores ipsa sed amet harum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat est modi placeat nam aut sunt reiciendis totam velit, veniam cumque.</p>
-        <button type="button" class="btn btn-lg about_us_btn">Read More</button>
-      </div>
-      <div class="about_us_inner_body_2">
-        <img class="img img-fluid" src="images/about_us_mobile.png" alt="mobile_about">
-        <h6 style="position: absolute;" class="inner_mobile_text"><span>Z</span><span>A</span><span>T</span><span>E</span><span>C</span> <span>S</span><span>E</span><span>R</span><span>V</span><span>I</span><span>C</span><span>E</span><span>S</span> </h6>
-      </div>
+
+    <div class="before_after  ">
+      <h3 class="">Before</h3>
+      <img class="img img-fluid" src="images/Services/before_after.png" alt="Before and after">
+      <h3 class="">After</h3>
     </div>
-    <!-- ABOUT US SECTION END -->
+  </section>
+  <!-- SERVICES SECTION END -->
   <!-- -*-*-**************-*-*-*-*-*****************-*-*-**-*-*-*-*- -->
-
-    <!-- SERVICES SECTION START -->
-<div class="services" id="services">
-<div class="heading_div">
-  <h6>Our <span>Services</span></h6>
-  <h3>What We Repair</h3>
-</div>
-<div class="sub_services">
-  <div class="service" id="service1">
-    <div class="service_img_header ratio ratio-4x3">
-      <img class="img img-fluid" src="images/mobile-3975799_640-removebg-preview.png" alt="mobile">
+  <!-- GALLERY SECTION START -->
+  <section class="gallery" id="gallery" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in"
+    data-aos-duration="1000">
+    <div class="gallery_headings">
+      <!-- GALLERY TOP HEADING -->
+      <h6>Our <span>Gallery</span></h6>
+      <!-- GALLERY TOP HEADING 2 -->
+      <h3><span>Buy</span> Yourself <span>Some</span> Phones</h3>
     </div>
-    <div class="service_data d-flex align-items-start justify-content-center flex-column">
-      <h5>Cracked Display</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias possimus maiores assumenda. Magni recusandae ad et sit labore laborum odit aperiam ratione itaque, quaerat aspernatur minima reiciendis id doloribus.</p>
-      <button class="btn">Repair It</button>
+    <div class="gallery_buttons">
+      <button class="mixitup-control-active btn filter" data-filter="*" id="gal_btn_1">All</button>
+      <button class="btn filter" data-filter="._3g" id="gal_btn_2">3G Mobiles</button>
+      <button class="btn filter" data-filter="._4g" id="gal_btn_3">4G Mobiles</button>
+      <button class="btn filter" data-filter="._5g" id="gal_btn_4">5G Mobiles</button>
     </div>
 
-    
+    <ul class="gallery_list clearfix" id="Grid">
+      <li class="_4g mix gallery_items">
+        <img class="img img-fluid" src="images/gallery/new_mobile.png" alt="gallery_img">
+        <div class="see_details_container">
+          <button class="btn">See Details</button>
+        </div>
+      </li>
+      <li class="_3g mix gallery_items">
+        <img class="img img-fluid" src="images/gallery/new_mobile_2.png" alt="gallery_img">
+        <div class="see_details_container">
+          <button class="btn">See Details</button>
+        </div>
+      </li>
+      <li class="_4g mix gallery_items">
+        <img class="img img-fluid" src="images/gallery/new_mobile_3.png" alt="gallery_img">
+        <div class="see_details_container">
+          <button class="btn">See Details</button>
+        </div>
+      </li>
+      <li class="_3g mix gallery_items">
+        <img class="img img-fluid" src="images/gallery/pngwing.com.png" alt="gallery_img">
+        <div class="see_details_container">
+          <button class="btn">See Details</button>
+        </div>
+      </li>
+      <li class="_5g mix gallery_items">
+        <img class="img img-fluid" src="images/gallery/new_mobile_2.png" alt="gallery_img">
+        <div class="see_details_container">
+          <button class="btn">See Details</button>
+        </div>
+      </li>
+      <li class="_5g mix gallery_items">
+        <img class="img img-fluid" src="images/gallery/new_mobile_3.png" alt="gallery_img">
+        <div class="see_details_container">
+          <button class="btn">See Details</button>
+        </div>
+      </li>
+      <li class="_3g mix gallery_items">
+        <img class="img img-fluid" src="images/gallery/new_mobile.png" alt="gallery_img">
+        <div class="see_details_container">
+          <button class="btn">See Details</button>
+        </div>
+      </li>
+      <li class="_5g mix gallery_items">
+        <img class="img img-fluid" src="images/gallery/pngwing.com.png" alt="gallery_img">
+        <div class="see_details_container">
+          <button class="btn">See Details</button>
+        </div>
+      </li>
+      <li class="_4g mix gallery_items">
+        <img class="img img-fluid" src="images/gallery/new_mobile_4.png" alt="gallery_img">
+        <div class="see_details_container">
+          <button class="btn">See Details</button>
+        </div>
+      </li>
+      <li class="_4g mix gallery_items">
+        <img class="img img-fluid" src="images/gallery/new_mobile.png" alt="gallery_img">
+        <div class="see_details_container">
+          <button class="btn">See Details</button>
+        </div>
+      </li>
+    </ul>
+    <!-- NUMBERS ANIMATION -->
+    <div class="numbers">
+      <div class="total_sales">
+        <div>
+          <span id="number1" class="number" data-count="750"></span><span>+</span>
+        </div>
+        <h6>Sales Per Day</h6>
+      </div>
+
+      <div class="total_repairs">
+        <div>
+          <span id="number2" class="number" data-count="1500"></span><span>+</span>
+        </div>
+        <h6>Repairs Per Day</h6>
+
+      </div>
+      <div class="total_trusted">
+        <div>
+          <span id="number3" class="number" data-count="50000"></span><span>+</span>
+        </div>
+        <h6>Trusted Users</h6>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY SECTION END -->
+
+  <!-- *-*-*-**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
+
+  <!-- Sign Up Request Start -->
+  <div class="sign_up_request" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in"
+    data-aos-duration="1000" data-aos-once="true">
+    <div class="container">
+      <h4>Get Your Mobile Repaired Now.</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsa soluta sit repellat aut qui sint ad
+        tempora autem! Maiores, officia. Dolorum provident error sit rerum mollitia sint voluptatibus esse.</p>
+      <button class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</button>
+    </div>
+    <img src="images/phone_in_hand.png" class="img img-fluid" alt="Mobile in hand">
   </div>
-  <div class="service" id="service2">
-    <div class="service_img_header ratio ratio-4x3">
-      <img class="img img-fluid" src="images/smartphone-1994410_640-removebg.png" alt="mobile">
-    </div>
-    <div class="service_data d-flex align-items-end justify-content-center flex-column">
-      <h5>Cracked Display</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias possimus maiores assumenda. Magni recusandae ad et sit labore laborum odit aperiam ratione itaque, quaerat aspernatur minima reiciendis id doloribus.</p>
-      <button class="btn">Repair It</button>
+  <!-- Sign Up Request End -->
+  <!-- *-*-*-**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
+  <!-- TEAM SECTION START -->
+  <section class="Team" id="team">
+    <div class="  heading_div">
+      <!-- TEAM TOP HEADING -->
+      <h6 class="">Our <span>Team</span></h6>
+      <!-- TEAM TOP HEADING 2 -->
+      <h3 class="">Our <span>Valuable </span>Members</h3>
     </div>
 
-    
+    <div class="team_members" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in"
+      data-aos-duration="1000" data-aos-once="true">
+      <div class="member" id="member1">
+        <img src="images/Team/team1.jpg" class="img img-fluid" alt="Member Image">
+        <h6 class="member_name_2">JOHN DOE</h6>
+        <div class="member_data">
+          <div class="name_and_work">
+            <p class="work">CEO</p>
+            <h6 class="member_name">JOHN DOE</h6>
+          </div>
+
+          <div class="member_social_links">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-whatsapp"></a>
+          </div>
+        </div>
+      </div>
+      <div class="member" id="member2">
+        <h6 class="member_name_2">JOHN DOE</h6>
+        <img src="images/Team/team2.jpg" class="img img-fluid" alt="Member Image">
+        <div class="member_data">
+          <div class="name_and_work">
+            <p class="work">Manager</p>
+            <h6 class="member_name">STEVE FROST</h6>
+          </div>
+
+          <div class="member_social_links">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-whatsapp"></a>
+          </div>
+        </div>
+      </div>
+      <div class="member" id="member3">
+        <img src="images/Team/team3.jpg" class="img img-fluid" alt="Member Image">
+        <h6 class="member_name_2">JOHN DOE</h6>
+
+        <div class="member_data">
+          <div class="name_and_work">
+            <p class="work">SALESMAN</p>
+            <h6 class="member_name">VICTOR FOX</h6>
+          </div>
+
+          <div class="member_social_links">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-whatsapp"></a>
+          </div>
+        </div>
+      </div>
+      <div class="member" id="member4">
+        <img src="images/Team/team4.jpg" class="img img-fluid" alt="Member Image">
+        <h6 class="member_name_2">JOHN DOE</h6>
+        <div class="member_data">
+          <div class="name_and_work">
+            <p class="work">WORKER</p>
+            <h6 class="member_name">ALEX CAREY</h6>
+          </div>
+
+          <div class="member_social_links">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-whatsapp"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video_container" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in"
+      data-aos-duration="1000" data-aos-once="true">
+      <div class="first_container_of_video_container">
+
+        <img src="images/men-771803_1280.png" class="img img-fluid" alt="Gentle Man">
+      </div>
+      <div class="second_container_of_video_container embed-responsive embed-responsive-">
+        <iframe class="embed-responsive-item" allowfullscreen
+          src="http://www.youtube.com/embed/VxzhGPrHCKI?rel=0"></iframe>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- TEAM SECTION END-->
+  <!-- *-*-*-**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
+  <!-- PRICING SECTION START -->
+  <section class="Pricing" id="pricing" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in"
+    data-aos-duration="1000" data-aos-once="true">
+    <div class="heading_div">
+      <h6>Our <span>Pricing</span></h6>
+      <h3>Our<span> Affordable</span> Plans</h3>
+    </div>
+    <div class="pricings_head">
+      <div class="pricings" id="pricing1">
+        <h4 class="pricings_heading"><span>Basic</span> Plan</h4>
+        <ul class="plan_List" id="basic_plan_list">
+
+          <li>No 5G Mobile Repairing</li>
+          <li>You Can Repair Just 1 Mobile/Month</li>
+          <li>Six 3G Mobiles Or Three 4G Mobiles</li>
+          <li>Cancel At Anytime</li>
+          <li>One Plan In Month.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+        <h4 class="Price"><i class="fa fa-tag"></i> Price: <span>100$</span></h4>
+      </div>
+      <div class="pricings" id="pricing2">
+        <h4 class="pricings_heading"><span>Advance</span> Plan</h4>
+        <ul class="plan_List" id="advanced_plan_list">
+
+          <li>5G Mobile Repairing</li>
+          <li>You Can Repair Just 4 Mobile/Month</li>
+          <li>Six 3G Mobiles And Three 4G Mobiles</li>
+          <li>Cancel At Anytime</li>
+          <li>One Plan In Month.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+        <h4 class="Price"><i class="fa fa-tag"></i> Price: <span>400$</span></h4>
+      </div>
+    </div>
+  </section>
+  <!-- PRICING SECTION END -->
+  <!-- *-*-*-**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
+  <!-- SPONSORS SECTION START -->
+  <section class="sponsors" id="sponsors" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in"
+    data-aos-duration="1000" data-aos-once="true">
+    <h3 class="sponsors_heading"><span>Trusted</span> By</h3>
+    <ul class="seperator">
+      <li></li>
+      <img src="images/star.png" alt="star">
+      <li></li>
+    </ul>
+    <div class="sponsors_slide">
+      <ul class="sponsors_slider" style="box-shadow:none;">
+
+        <li><img src="images/sponsors/logo2.png" class="img img-fluid" alt="sponsors image"></li>
+        <li><img src="images/sponsors/logo3.png" class="img img-fluid" alt="sponsors image"></li>
+        <li><img src="images/sponsors/logo4.png" class="img img-fluid" alt="sponsors image"></li>
+      </ul>
+    </div>
+    <ul class="client-nav">
+      <li id="client-prev"><a class="bx-prev"><i class=""></i></a></li>
+      <li id="client-next"><a class="bx-next"><i class=""></i></a></li>
+    </ul>
+  </section>
+  <!-- SPONSORS SECTION END -->
+  <!-- TESTIMONIALS SECTION START -->
+  <section class="testimonials" id="testimonials" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in"
+    data-aos-duration="1000" data-aos-once="true">
+    <div class="heading_div">
+      <h6><span>Testimonials</span></h6>
+
+      <h3>Our Clients <span>Reviews</span></h3>
+    </div>
+
+    <div class="reviews_header">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="reviews" id="review1">
+              <img src="images/Clients/pro1.png" alt="Client Profile Picture" class="img img-fluid">
+              <div class="client_data">
+                <h5 class="client_name">Mario</h5>
+                <ul class="seperator">
+                  <li></li>
+                  <img src="images/star.png" alt="star">
+                  <li></li>
+                </ul>
+                <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis dolore
+                  voluptatum dolorum totam. Non placeat deleniti sit excepturi ipsa!</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="reviews" id="review2">
+              <img src="images/Clients/pro2.png" alt="Client Profile Picture" class="img img-fluid">
+              <div class="client_data">
+                <h5 class="client_name">Adriana</h5>
+                <div class="seperator">
+                  <li></li>
+                  <img src="images/star.png" alt="star">
+                  <li></li>
+                </div>
+                <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis dolore
+                  voluptatum dolorum totam. Non placeat deleniti sit excepturi ipsa!</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="reviews" id="review3">
+              <img src="images/Clients/pro3.png" alt="Client Profile Picture" class="img img-fluid">
+              <div class="client_data">
+                <h5 class="client_name">Gibbs</h5>
+                <div class="seperator">
+                  <li></li>
+                  <img src="images/star.png" alt="star">
+                  <li></li>
+                </div>
+                <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis dolore
+                  voluptatum dolorum totam. Non placeat deleniti sit excepturi ipsa!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+  <!-- TESTIMONIALS SECTION END -->
+  <!-- *-*-*-**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
+  <!-- CONTACT SECTION START -->
+  <section class="contact" id="contact" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in"
+    data-aos-duration="1000" data-aos-once="true">
+    <div class="heading_div">
+      <h3><span>Contact</span> Us</h3>
+      <ul class="seperator">
+        <li></li>
+        <img src="images/star.png" alt="star">
+        <li></li>
+      </ul>
+    </div>
+    <div class="sub_contact">
+      <form>
+
+        <input id="Enter_email" type="email" data-new-placeholder="Enter Your Email" placeholder="Email"
+          class="label_better" required>
+
+        <textarea name="Message" id="contact_message" placeholder="Message" data-new-placeholder="Enter Your Message"
+          cols="120" rows="10" class="label_better" required></textarea>
+        <button class="btn btn-lg" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <footer class="section bg-dark">
+    <h3>ZATEC SERVICES</h3>
+    <ul>
+      <li class="footer_link"><a href="#home">Home</a></li>
+      <li class="footer_link"><a href="#about">About Us</a></li>
+      <li class="footer_link"><a href="#services">Services</a></li>
+      <li class="footer_link"><a href="#contact">Contact Us</a></li>
+      <li class="footer_link"><a href="#gallery">Gallery</a></li>
+      <li class="footer_link"><a href="#team">Team</a></li>
+      <li class="footer_link"><a href="#pricing">Pricing</a></li>
+      <li class="footer_link"><a href="#sponsors">Sponsors</a></li>
+      <li class="footer_link"><a href="#testimonials">Testimonials</a></li>
+    </ul>
+    <ul class="seperator">
+      <li></li>
+      <img src="images/star.png" alt="star">
+      <li></li>
+    </ul>
+    <div class="social_icons">
+      <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+      <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+      <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+      <a href="https://www.whatsapp.com" target="_blank" class="fa fa-whatsapp"></a>
+
+    </div>
+    <p>&copy; COPYRIGHT 2022 Zatec Services</p>
+    <p>ALL RIGHTS RESERVED</p>
+  </footer>
+  <!-- CONTACT SECTION END -->
+  <!-- *-*-*-**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
+  <!-- MODAL START -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+
+        <!-- MODAL HEADER -->
+        <div class="modal-header">
+
+          <!-- MODAL TITLE -->
+          <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+
+          <!-- MODAL CLOSE/CROSS BUTTONS -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- MODAL BODY START -->
+        <div class="modal-body">
+
+          <!-- SIGN UP FORM START -->
+          <form id="sign_up_form" class="row g-3">
+            <!-- EMAIL -->
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" autocomplete="username" class="form-control" id="inputEmail4" required>
+            </div>
+            <!-- PASSWORD -->
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" autocomplete="current-password" class="form-control" id="inputPassword4">
+            </div>
+            <!-- CITY -->
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <!-- STATE -->
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <!-- ZIP CODE -->
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <!-- CHECK BOX -->
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  By signing up you are agreeing to our <a href="#">terms and conditions</a>
+                </label>
+              </div>
+            </div>
+            <!-- SIGN UP BUTTON -->
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+              <p>already sign up?<a href="#" class="toggleSignIn">Login</a></p>
+            </div>
+          </form>
+          <!-- SIGN UP END -->
+          <!-- LOGIN FORM START -->
+          <form id="login_form" style="display: none;">
+            <!-- EMAIL -->
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" autocomplete="username" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <!-- PASSWORD -->
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" autocomplete="current-password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+
+            <!-- SIGN IN BUTTON -->
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            <!-- SIGN UP LINK IF YOU ARE NOT REGISTERED -->
+            <p>not registered?<a href="#" class="toggleSignUp">signup</a> </p>
+          </form>
+        </div>
+        <!-- MODAL FOOTER -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="service" id="service3">
-    <div class="service_img_header ratio ratio-4x3">
-      <img class="img img-fluid" src="images/smartphone-1994410_640-removebg.png" alt="mobile">
-    </div>
-    <div class="service_data d-flex align-items-start justify-content-center flex-column">
-      <h5>Cracked Display</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias possimus maiores assumenda. Magni recusandae ad et sit labore laborum odit aperiam ratione itaque, quaerat aspernatur minima reiciendis id doloribus.</p>
-      <button class="btn">Repair It</button>
-    </div>
-
-    
-  </div>
-  <div class="service" id="service4">
-    <div class="service_img_header ratio ratio-4x3">
-      <img class="img img-fluid" src="images/about_us_mobile.png" alt="mobile">
-    </div>
-    <div class="service_data d-flex align-items-end justify-content-center flex-column">
-      <h5>Cracked Display</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias possimus maiores assumenda. Magni recusandae ad et sit labore laborum odit aperiam ratione itaque, quaerat aspernatur minima reiciendis id doloribus.</p>
-      <button class="btn">Repair It</button>
-    </div>
-
-    
-  </div>
-</div>
-</div>
-    <!-- SERVICES SECTION END -->
-  </main>
+  <!-- MODAL END -->
 
 
 
+  <!-- LOADS JQUERY FILE -->
+  <script src="js/jquery-3.6.0.js"></script>
+  <!-- LOADS BOOTSTRAP JAVASCRIPT FILE -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- *-*-*-*-*-*-*-*-*-*-*-PLUGINS OR LIABRARY-*-*-*-*-*-*-*-*-*-*-* -->
+
+  <!-- LOADS COUNTUP JAVASCRIPT FILES THAT ARE USED FOR NUMBERS ANIMATION  -->
+  <script type="module" src="js/countUp.min.js"></script>
+  <script src="js/countUp.umd.js" nomodule></script>
+  <script type="module" src="js/countUp.withPolyfill.min.js"></script>
+  <!-- LOADS JQUERY-INVIEW JAVASCRIPT FILE THAT IS USED FOR WHAT TO DO WHEN THE USER IS AT SPECIFIC POINT OF THE WEBSITE  -->
+  <script src="js/jquery.inview.js"></script>
+
+  <!-- LOADS JQUERY-LETTERING JAVASCRIPT FILE THAT IS USED TO DIVIDE THE SINGLE SENTENCE INTO  WORDS OR SINGLE CHARACTERS-->
+  <script src="js/jquery.lettering.js"></script>
+  <!-- LOADS THE AOS LIABRARY JAVASCRIPT FILE THAT IS USED FOR ANIMATION HAPPENS ON SCROLL -->
+  <script src="js/aos.js"></script>
+  <!-- LOADS THE VANILLA-TILT JAVASCRIPT FILE THAT IS USED TO GIVE A 3D TILTING TO THE CARDS -->
+  <script src="js/vanilla-tilt.js"></script>
+  <!-- LOADS THE MIXITUP JAVASCRIPT FILE THAT IS USED TO SHUFFLE AND SORT THE  GALLERY ITEMS PRESENT IN THE WEBSITE -->
+  <script src="js/mixitup.min.js"></script>
+  <!-- LOADS THE BXSLIDER FILE THAT IS USED FOR SLIDING IN THE PAGE -->
+  <script src="js/jquery.bxslider.min.js"></script>
+  <!-- LOADS THE LABEL BETTER JAVASCRIPT FILE TO LABEL BETTER THE FORMS -->
+  <script src="js/jquery.label_better.js"></script>
+  <!-- LOADS THE JQUERY VALIDATE JAVASCRIPT FILE THAT IS USED FOR MAKING THE FORMS INTERACTIVE -->
+  <script src="js/jquery.validate.js"></script>
+  <!-- -*-*-*-*-*-*-*-*-*-*-*-PLUGINS LOADING ENDS *-*-*-*-*-*-*-*-*-*-*- -->
 
 
+  <!-- JAVASCRIPT FOR CALLING THE NUMBER ANIMATIONS -->
+  <script type="module">
+    import { CountUp } from './js/countUp.min.js';
+
+    $('.numbers').one('inview', function (event, isInView) {
+
+      if (isInView) {
+
+        $('.numbers .number').each(function () {
+          var element = $(this);
+          var count = element.attr('data-count')
+          var id = element.attr('id');
+          var numAnim = new CountUp(id, count);
+          numAnim.start();
+
+        })
+      }
+
+    })
 
 
-
-
-
-  <script src="js/BS/js/bootstrap.bundle.min.js"></script>
-  <script src="js/BS/js/bootstrap.bundle.js"></script>
-
-  <script src="js/BS/js/bootstrap.min.js"></script>
+  </script>
+  <!-- LOADS MAIN JAVASCRIPT FILE -->
   <script src="js/app.js"></script>
-
 </body>
 
 </html>
