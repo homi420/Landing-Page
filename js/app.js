@@ -31,7 +31,7 @@ $(document).ready(function () {
   })
   /* changes the size of header when it is not on the top of the page*/
   function nav_changer() {
-    scrollPos = window.scrollY
+    var scrollPos = window.scrollY
     if (scrollPos > 1) {
       $(".for_header").removeClass("header")
       $("header").addClass("for_header");
