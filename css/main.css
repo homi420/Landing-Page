@@ -1,6 +1,7 @@
 /*  LOAD FONT FAMILY OF MONTSERRAT*/
 @import url("../Font_Family/montserrat/Montserrat-Regular.otf");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
